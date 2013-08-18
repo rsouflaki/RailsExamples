@@ -11,7 +11,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130818101852) do
+ActiveRecord::Schema.define(version: 20130818130230) do
+
+  create_table "applications", force: true do |t|
+    t.integer  "resume_id"
+    t.integer  "employer_id"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "cover_letters", force: true do |t|
+    t.integer  "resume_id"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "employers", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "employers_resumes", id: false, force: true do |t|
+    t.integer "employer_id"
+    t.integer "resume_id"
+  end
 
   create_table "jobs", force: true do |t|
     t.string   "company_name"
@@ -21,6 +47,7 @@ ActiveRecord::Schema.define(version: 20130818101852) do
     t.datetime "end_date"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "resume_id"
   end
 
   create_table "resumes", force: true do |t|

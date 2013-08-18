@@ -1,0 +1,22 @@
+<h1>Listing views</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>IP</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @views.each do |view| %>
+      <tr>
+        <td><%= view.time_viewed%></td>
+        <td><%= view.ip %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+
+

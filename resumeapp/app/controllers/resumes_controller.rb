@@ -1,5 +1,10 @@
 class ResumesController < ApplicationController
   before_action :set_resume, only: [:show, :edit, :update, :destroy]
+  
+  def viewed
+    resume = Resume.find(params[:id])
+    @views = resume.view_histories
+  end
 
   # GET /resumes
   # GET /resumes.json

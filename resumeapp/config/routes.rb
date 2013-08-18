@@ -1,4 +1,6 @@
 Resumeapp::Application.routes.draw do
+  get "job/add"
+  get "job/list"
   resources :resumes
 
   # The priority is based upon order of creation: first created -> highest priority.

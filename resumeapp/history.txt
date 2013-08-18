@@ -1,35 +1,19 @@
   518  cd git/
-  519  ls
   520  mkdir RailsExample
-  521  cd R
   522  cd RailsExample/
   523  rails console
   524  rails new resumeapp
-  525  ls
   526  port install sqlite3
   527  sudo apt-get install sqlite3
-  528  ls
   529  rm -rf resumeapp/
   530  sudo apt-get install sqlite3
   531  rails new resumeapp
   532  sqlite3
-  533  bg
-  534  gf
-  535  fg
   536  sudo apt-get install sqlite-devel
   537  sudo apt-get install libsqlite3-dev
-  538  rails new resumeapp
-  539  ls
-  540  rm -rf resumeapp/
   541  rails new resumeapp
-  542  ls
   543  cd resumeapp/
-  544  ls
-  545  ls -R .
-  546  ls
   547  vim README.rdoc 
-  548  ls vendor/
-  549  ls -l .
   550  vim app/views/layouts/application.html.erb 
   551  vim app/assets/javascripts/application.js 
   552  vim app/assets/stylesheets/application.css 
@@ -94,3 +78,88 @@
   611  rake db:migrate
   612  rake routes
   613  vim config/routes.rb 
+  428  ls db/
+  429  sqlitebrowser
+  430  sudo apt-get install sqlitebrowser
+  431  sqlitebrowser db/test.sqlite3 
+  432  sqlitebrowser db/development.sqlite3 
+  433  vim app/controllers/resumes_controller.rb 
+  434  vim app/views/resumes/new.html.erb 
+  435  vim app/views/resumes/edit.html.erb 
+  436  vim app/views/resumes/index.html.erb 
+  437  vim app/views/resumes/index.html.erb 
+  438  vim app/views/resumes/show.json.jbuilder 
+  439  vim app/views/resumes/show.html.erb 
+  440  ls
+  441  vim Gemfile
+  442  vim Gemfile
+  443  vim Gemfile
+  444  bundle
+  445  bundle show unicorn
+  446  unicorn_rails
+  447  cd ../../RailsExamples/resumeapp/
+  448  ls
+  449  rails server
+  450  rake db:version
+  451  rails generate migration add_indexes_to_resumes
+  452  vim db/migrate/20130818062437_add_indexes_to_resumes.rb
+  453  rake db:migrate
+  454  rake db:rollback
+  455  vim db/migrate/20130818062437_add_indexes_to_resumes.rb
+  456  rake db:migrate
+  457  git status
+  458  cd ../../
+  459  ls
+  460  git clone https://github.com/rsouflaki/RailsExamples.git
+  461  ls
+  462  cd RailsExamples/
+  463  mv ../RailsExample/resumeapp .
+  464  ls
+  465  rm -rf ../RailsExample
+  466  ls
+  467  cd resumeapp/
+  468  rails server
+  469  ls
+  470  git status
+  471  cd ..
+  472  ls
+  473  ls -l
+  474  vim /home/rsouflaki/.bashrc
+  475  vim /home/rsouflaki/.bashrc
+  476  source ~/.bashrc
+  477  ls
+  478  man ls
+  479  vim /home/rsouflaki/.bashrc
+  480  ls
+  481  source ~/.bashrc
+  482  ls
+  483  git add resumeapp/
+  484  git status
+  485  vim .gitignore 
+  486  git status
+  487  git commit -a -m "Add Rails example app"
+  488  git status
+  489  git push
+  490  git push
+  491  ls
+  492  cd resumeapp/
+  493  vim db/seeds.rb 
+  494  rake db:seed
+  495  ls
+  496  rails server
+  497  rails dbconsole
+  498  vim db/seeds.rb 
+  499  rake db:seed
+  500  rails generate --help
+  501  cd git/RailsExamples/
+  502  ls
+  503  cd resumeapp/
+  504  ls
+  505  rails generate model Job company_name: string work_summary:text start_date:datetime end_date:datetime
+  506  ls
+  507  history
+  508  cat history.txt 
+  509  vim history.txt 
+  510  history 
+  511  vim history.txt 
+  512  history > history2.txt 

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  resume_id: 1
+  time_viewed: 2013-08-18 12:18:52
+  ip: MyString
+
+two:
+  resume_id: 1
+  time_viewed: 2013-08-18 12:18:52
+  ip: MyString

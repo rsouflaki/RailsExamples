@@ -1,0 +1,96 @@
+  518  cd git/
+  519  ls
+  520  mkdir RailsExample
+  521  cd R
+  522  cd RailsExample/
+  523  rails console
+  524  rails new resumeapp
+  525  ls
+  526  port install sqlite3
+  527  sudo apt-get install sqlite3
+  528  ls
+  529  rm -rf resumeapp/
+  530  sudo apt-get install sqlite3
+  531  rails new resumeapp
+  532  sqlite3
+  533  bg
+  534  gf
+  535  fg
+  536  sudo apt-get install sqlite-devel
+  537  sudo apt-get install libsqlite3-dev
+  538  rails new resumeapp
+  539  ls
+  540  rm -rf resumeapp/
+  541  rails new resumeapp
+  542  ls
+  543  cd resumeapp/
+  544  ls
+  545  ls -R .
+  546  ls
+  547  vim README.rdoc 
+  548  ls vendor/
+  549  ls -l .
+  550  vim app/views/layouts/application.html.erb 
+  551  vim app/assets/javascripts/application.js 
+  552  vim app/assets/stylesheets/application.css 
+  553  ls -l config/
+  554  vim config.ru 
+  555  vim config/database.yml 
+  556  vim config/initializers/session_store.rb 
+  557  vim db/seeds.rb 
+  558  rails console
+  559  javascript
+  560  rails server
+  561  vim Gemfile
+  562  rbenv
+  563  LTS
+  564  sudo apt-get install nodejs
+  565  cd ..
+  566  ls
+  567  cd ..
+  568  ls
+  569  git clonoe git://github.com/ry/node.git
+  570  git clone git://github.com/ry/node.git
+  571  ls
+  572  cd node/
+  573  ls
+  574  ./configure 
+  575  make
+  576  sudo make install
+  577  cd -
+  578  cd RailsExample/resumeapp/
+  579  ls
+  580  history
+  581  rails server
+  582  ls
+  583  rails generate scaffold Resume name:string phone:string email:string street:string city:string state:string zip:integer summary:text
+  584  vim db/development.sqlite3 
+  585  vim db/migrate/20130817132352_create_resumes.rb 
+  586  vim app/models/resume.rb 
+  587  vim app/controllers/resumes_controller.rb 
+  588  ls
+  589  vim app/views/resumes/index.html.erb 
+  590  vim app/views/resumes/new.html.erb 
+  591  vim app/views/resumes/_form.html.erb 
+  592  vim config/routes.rb 
+  593  vim test/models/resume_test.rb 
+  594  vim test/controllers/resumes_controller_test.rb 
+  595  cd test/controllers/
+  596  ls
+  597  ruby resumes_controller_test.rb 
+  598  cd 
+  599  pwd
+  600  cd -
+  601  cd ..
+  602  ls
+  603  ruby test_helper.rb 
+  604  cd ../
+  605  ls
+  606  rake
+  607  rake -T
+  608  rake about
+  609  rake db:migrate
+  610  rake test
+  611  rake db:migrate
+  612  rake routes
+  613  vim config/routes.rb 
